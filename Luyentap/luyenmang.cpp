@@ -15,7 +15,7 @@ for(int i=0;i<n;i++)
 {
     M[i]=rand()%100;
 }
-//Bat Dau So Sanh
+
 cout<<"\nKet Qua Sau Khi Quay So La:\n";
 int kq(0);
 for(int i=0;i<n;i++)
