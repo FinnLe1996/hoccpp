@@ -24,7 +24,6 @@ int main()
     {
         for(int j=0;j<cot;j++)
         {
-           // cout<<"M["<<i<<"]["<<j<<"]= "<<M[i][j]<<endl;
            cout<<M[i][j]<<"\t";
         }
         cout<<"\n";
@@ -44,10 +43,10 @@ int main()
     cout<<M[i][c]<<"\t";
     if(dong==cot)
     {
-    	cout<<"\n Xuat Ğuong Cheo Chinh"<<endl;
+    	cout<<"\n Xuat Ãuong Cheo Chinh"<<endl;
     	for(int i=0;i<dong;i++)
     	cout<<M[i][i]<<"\t";
-    	cout<<"\n Xuat Ğuong Cheo Phu"<<endl;
+    	cout<<"\n Xuat Ãuong Cheo Phu"<<endl;
     	for(int i=0;i<cot;i++)
     	cout<<M[i][dong-i-1]<<"\t";
     	
@@ -55,10 +54,10 @@ int main()
  /* 
        Update Function Search Value
        Author:FinnLe
+       */
        
        
-       
-   cout<<"Tim Kiem Gia Tri: ";
+   cout<<"\nTim Kiem Gia Tri: ";
     int k;
     cin>>k;
     int kt;
@@ -78,41 +77,7 @@ int main()
 		cout<<"\t GT "<<k<<" Duoc Tim Thay"<< kt <<" lan"<<endl;
 	}
 	else
-	cout<<"\tKhong Tim Thay Gia Tri:"<<k<<endl; */
+	cout<<"\tKhong Tim Thay Gia Tri:"<<k<<endl; 
 	
-/*
-           FAILLED
-           FAILLED
-           FAILLED
-           Author:FinnLe;
-
-
-	cout<<"Mang Sau Khi Sap Xep(Bubbles Soft):\n";
-	for(int i=0;i<dong-1;i++)
-    
-	{
-    	for(int j=0;j<cot-1;j++)
-    	{
-    		for(int h=i+1;h<dong;h++)
-    		{
-    			for(int d=j+1;d<cot;d++)
-    			{
-    				if(M[i][j]>M[h][d])
-    				{
-    					int t=M[i][j];
-    					M[i][j]=M[h][d];
-    					M[h][d]=t;
-					}
-				}
-			}
-		}
-	}
-	for(int i=0;i<dong;i++)
-	{
-		for(int j=0;j<cot;j++)
-		{
-			cout<<M[i][j]<<"\t";
-		}
-	} */
     return 0;
 }
