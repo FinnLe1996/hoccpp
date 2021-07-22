@@ -6,23 +6,23 @@ using namespace std;
 int main()
 {
     srand(time(NULL));
-    int dong,cot;
-    cout<<"Nhap Dong:";
-    cin>>dong;
-    cout<<"Nhap Cot. ";
-    cin>>cot;
-    int M[dong][cot];
-    for(int i=0;i<dong;i++)
+    int row,col;
+    cout<<"Enter Rows Number:";
+    cin>>row;
+    cout<<"Enter Volums Number:";
+    cin>>col;
+    int M[row][col];
+    for(int i=0;i<row;i++)
     {
-        for(int j=0;j<cot;j++)
+        for(int j=0;j<col;j++)
         {
             M[i][j]=rand()%100;
         }
     }
     cout<<"Mang Sau Khi Nhap:\n";
-    for(int i=0;i<dong;i++)
+    for(int i=0;i<row;i++)
     {
-        for(int j=0;j<cot;j++)
+        for(int j=0;j<col;j++)
         {
            cout<<M[i][j]<<"\t";
         }
@@ -34,21 +34,21 @@ int main()
     cout<<"Ban Muon Xuat Dong Nao::";
     int r;
     cin>>r;
-    for(int i=0;i<dong;i++)
+    for(int i=0;i<row;i++)
     cout<<M[r][i]<<"\t";
     cout<<"\nBan Muon Xuat Cot Nao";
     int c;
     cin>>c;
-    for(int i=0;i<cot;i++)
+    for(int i=0;i<col;i++)
     cout<<M[i][c]<<"\t";
-    if(dong==cot)
+    if(row==col)
     {
     	cout<<"\n Xuat Ðuong Cheo Chinh"<<endl;
-    	for(int i=0;i<dong;i++)
+    	for(int i=0;i<row;i++)
     	cout<<M[i][i]<<"\t";
     	cout<<"\n Xuat Ðuong Cheo Phu"<<endl;
-    	for(int i=0;i<cot;i++)
-    	cout<<M[i][dong-i-1]<<"\t";
+    	for(int i=0;i<col;i++)
+    	cout<<M[i][row-i-1]<<"\t";
     	
 	}
  /* 
@@ -61,9 +61,9 @@ int main()
     int k;
     cin>>k;
     int kt;
-    for(int i=0;i<dong;i++)
+    for(int i=0;i<row;i++)
     {
-    	for(int j=0;j<cot;j++)
+    	for(int j=0;j<col;j++)
     	{
     	if(k==M[i][j])
     	{
